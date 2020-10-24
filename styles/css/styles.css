@@ -20,6 +20,40 @@ body {
 input {
   display: none; }
 
-.header-menu {
+.headerMenu {
   display: flex;
   margin-right: 100px; }
+
+.headerLogo img {
+  height: 36px;
+  width: 36px;
+  margin-left: 100px; }
+
+.link {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 28px;
+  padding: 0 10px 0 48px;
+  text-decoration: none; }
+
+.link:hover {
+  text-decoration: line-through;
+  color: #00F3BB; }
+
+.link:active {
+  text-decoration: line-through;
+  color: gray; }
+
+.hello {
+  margin: 120px 200px;
+  width: 100%; }
+
+.hello h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 64px;
+  color: #060A24;
+  letter-spacing: 0;
+  font-weight: 400;
+  z-index: -9999; }
