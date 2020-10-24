@@ -1,0 +1,20 @@
+{
+  "name": "podcastChannel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyongkim/podcastchannel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jyongkim/podcastchannel/issues"
+  },
+  "homepage": "https://github.com/jyongkim/podcastchannel#readme"
+}
