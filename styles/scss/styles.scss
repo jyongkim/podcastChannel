@@ -6,4 +6,25 @@
 
 body {
     overflow-x: hidden; //Le dice al browser que no muestre cualquier contenido que se salga de las dimensiones especificadas en el contenedor.
- }    
+ }
+ 
+ .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+ }
+
+ input {
+    display:none;
+ }
+
+ .header-menu {
+    display: flex;
+    margin-right: 100px;
+}
