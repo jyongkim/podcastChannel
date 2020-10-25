@@ -8,9 +8,9 @@ body {
   max-width: 1440px;
 }
 
-ol li{
-  list-style:none;
-  }
+ol li {
+  list-style: none;
+}
 
 .header {
   display: flex;
@@ -293,7 +293,6 @@ input {
   line-height: 28px;
 }
 
-////////////////////////////////////////////////////////////////////////////////////// 
 .containerSocial {
   display: flex;
   justify-content: space-between;
@@ -325,8 +324,6 @@ input {
 #telegram {
   margin-right: 30px;
 }
-
-////////////////////////////////////////////////////////////////////////////////////// 
 
 @media screen and (max-width: 767px) {
   // Tablet 768px
@@ -636,7 +633,7 @@ input {
   .topic img {
     justify-content: center;
   }
-  
+
   .topic p {
     margin-top: 29px;
   }
@@ -647,7 +644,7 @@ input {
     justify-content: center;
     text-align: center;
   }
-  
+
   .novedadesBackground {
     background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
     text-align: center;
@@ -664,7 +661,7 @@ input {
     position: absolute;
     background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   }
-  
+
   .novedades {
     display: flex;
     flex-wrap: wrap;
@@ -705,7 +702,7 @@ input {
     letter-spacing: 0;
     line-height: 28px;
   }
-  
+
   .containerSocial {
     display: flex;
     justify-content: space-between;
@@ -716,26 +713,25 @@ input {
   .container-social a i {
     color: black;
   }
-  
+
   #spotify {
     margin-right: 30px;
     width: 18px;
   }
-  
+
   #instagram {
     margin-right: 30px;
   }
-  
+
   #twitter {
     margin-right: 30px;
   }
-  
+
   #facebook {
     margin-right: 30px;
   }
-  
+
   #telegram {
     margin-right: 30px;
   }
-
 }
