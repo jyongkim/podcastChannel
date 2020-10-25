@@ -4,7 +4,10 @@
   border: 0; }
 
 body {
-  overflow-x: hidden; }
+  max-width: 1440px; }
+
+ol li {
+  list-style: none; }
 
 .header {
   display: flex;

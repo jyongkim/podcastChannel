@@ -5,8 +5,12 @@
 }
 
 body {
-  overflow-x: hidden; //Le dice al browser que no muestre cualquier contenido que se salga de las dimensiones especificadas en el contenedor.
+  max-width: 1440px;
 }
+
+ol li{
+  list-style:none;
+  }
 
 .header {
   display: flex;
@@ -289,6 +293,7 @@ input {
   line-height: 28px;
 }
 
+////////////////////////////////////////////////////////////////////////////////////// 
 .containerSocial {
   display: flex;
   justify-content: space-between;
@@ -321,7 +326,7 @@ input {
   margin-right: 30px;
 }
 
-// Fin de "¡Qué mal que la estoy pasando!" ----------------------------------------------------
+////////////////////////////////////////////////////////////////////////////////////// 
 
 @media screen and (max-width: 767px) {
   // Tablet 768px
