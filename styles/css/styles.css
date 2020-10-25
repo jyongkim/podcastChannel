@@ -11,19 +11,13 @@ body {
   color: #0000ec; }
 
 .fadeInDown {
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown; }
 
 .fadeInDownMenu {
-  -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-name: fadeInDownMenu;
   animation-name: fadeInDownMenu; }
 
 @keyframes fadeInDown {
@@ -131,6 +125,10 @@ input {
 .button:hover {
   background-image: linear-gradient(225deg, #0000a3 -40%, #00f3bb 100%);
   color: white; }
+
+.episodes {
+  display: flex;
+  flex-wrap: wrap; }
 
 .episodesBackground {
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
@@ -312,7 +310,7 @@ input {
 #telegram {
   margin-right: 30px; }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   body {
     overflow-x: hidden; }
   * {
