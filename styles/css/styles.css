@@ -92,6 +92,8 @@ input {
 .hello {
   margin: 120px 200px;
   width: 100%; }
+  .hello p span {
+    display: block; }
 
 .fadeIn {
   -webkit-animation-duration: 4s;

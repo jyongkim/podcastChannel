@@ -111,6 +111,10 @@ input {
 .hello {
   margin: 120px 200px;
   width: 100%;
+  
+  p span {
+    display: block;
+  }
 }
 
 .fadeIn {
