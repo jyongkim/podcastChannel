@@ -7,6 +7,7 @@
 
 body {
   overflow-x: hidden;
+  width: 1440px;
 }
 
 .color {
@@ -114,24 +115,6 @@ input {
   
   p span {
     display: block;
-  }
-}
-
-.fadeIn {
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 
@@ -317,7 +300,9 @@ input {
 }
 
 .novedades {
+  width: 100%;
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
