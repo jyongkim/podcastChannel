@@ -120,3 +120,79 @@ input {
   margin-bottom: 72px;
   width: 500px;
   height: 232px; }
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.aboutImg {
+  width: 457.6px;
+  height: 660px;
+  margin-right: 50px;
+  position: relative; }
+
+.aboutDescription h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 48px;
+  color: #060a24;
+  letter-spacing: 0;
+  font-weight: 400; }
+
+.aboutDescription p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: justify;
+  width: 464px;
+  height: 204px; }
+
+.guests h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 48px;
+  color: #060a24;
+  letter-spacing: 0;
+  font-weight: 400;
+  margin: 36px 200px; }
+
+.guestsImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; }
+
+.guestsImg {
+  width: 422px;
+  height: auto;
+  margin-top: -5px; }
+
+.topics h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 48px;
+  color: #060A24;
+  letter-spacing: 0;
+  font-weight: normal;
+  margin: 56px 200px; }
+
+.topic {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #060A24;
+  letter-spacing: 0;
+  width: 260px; }
+
+.topic img {
+  justify-content: center; }
+
+.topic p {
+  margin-top: 29px; }
+
+.topicsContainer {
+  display: flex;
+  margin-bottom: 200px;
+  justify-content: center;
+  text-align: center; }
