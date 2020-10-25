@@ -289,7 +289,7 @@ input {
   line-height: 28px;  
 }
 
-// SE COMPLICA -------------------------------------------------------------
+// "¡Qué mal que la estoy pasando!" -------------------------------------------------------------
 
 .containerSocial {
   display: flex;
@@ -323,4 +323,15 @@ input {
   margin-right: 30px;
 }
 
-// FINAL DE SE COMPLICA ----------------------------------------------------
+// Fin de "¡Qué mal que la estoy pasando!" ----------------------------------------------------
+
+@media screen and (max-width: 767px) { // Tablet 768px
+body {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+}
