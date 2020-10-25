@@ -5,8 +5,7 @@
   list-style: none; }
 
 body {
-  overflow-x: hidden;
-  width: 1440px; }
+  overflow-x: hidden; }
 
 .color {
   color: #0000ec; }
@@ -69,9 +68,6 @@ input {
   height: 36px;
   width: 36px;
   margin-left: 100px; }
-
-#menu-btn {
-  display: none; }
 
 .link {
   font-family: "IBM Plex Mono", monospace;
