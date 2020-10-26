@@ -181,6 +181,9 @@ input {
   width: 464px;
   height: 204px; }
 
+.aboutDescription p span {
+  display: block; }
+
 .guests h2 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 48px;
