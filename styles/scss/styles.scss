@@ -129,6 +129,10 @@ input {
   font-weight: 400;
 }
 
+.hello p span {
+  display: block;
+}
+
 .button {
   background-color: #00f3bb;
   width: 226px;
@@ -356,7 +360,6 @@ input {
 }
 
 @media screen and (max-width: 767px) {
-  // La cagué con el max-width, debería haberla pensado con el min-width. Ahora tengo que poner, nuevamente todo lo de arriba aclarado a partir de acá.
   // Tablet 768px
   body {
     overflow-x: hidden;

@@ -106,6 +106,9 @@ input {
   line-height: 24px;
   font-weight: 400; }
 
+.hello p span {
+  display: block; }
+
 .button {
   background-color: #00f3bb;
   width: 226px;
