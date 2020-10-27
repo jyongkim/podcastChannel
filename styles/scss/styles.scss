@@ -7,7 +7,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 .color {
@@ -385,6 +385,12 @@ input {
       width: 100%;
    }   
   
+    #menu-btn{ // Agregado.
+    display: block;
+    margin-right: 16px;
+    font-size: 23px;
+  } 
+
   .headerLogo img {
      height: 24px;
      width: 24px;
@@ -481,6 +487,14 @@ input {
      background:#0000EC;
      width: 100%;
      padding-top: 20px;
+  }
+
+  .headerMenu.is-active{ //Agregado.
+   display: block;
+  }
+
+  .hamburger.is-active{ //Agregado.
+   display: none;
   }
   
   #topics{

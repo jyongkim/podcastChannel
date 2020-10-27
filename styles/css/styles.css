@@ -6,7 +6,7 @@
   list-style: none; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: auto; }
 
 .color {
   color: #0000ec; }
@@ -320,6 +320,10 @@ input {
     justify-content: space-between;
     margin-bottom: 8px;
     width: 100%; }
+  #menu-btn {
+    display: block;
+    margin-right: 16px;
+    font-size: 23px; }
   .headerLogo img {
     height: 24px;
     width: 24px;
@@ -391,6 +395,10 @@ input {
     background: #0000EC;
     width: 100%;
     padding-top: 20px; }
+  .headerMenu.is-active {
+    display: block; }
+  .hamburger.is-active {
+    display: none; }
   #topics {
     padding-bottom: 10px; }
   .link {
