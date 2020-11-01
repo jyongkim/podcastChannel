@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -42,7 +44,7 @@ input {
   display: none;
 }
 
-////////// EMPIEZA EL MENÚ BAJO MENÚ HAMBURGUESA //////////
+////////// EMPIEZA EL MENÚ BAJO MENÚ HAMBURGUESA.
 @media screen and (max-width: 768px) {
   label {
     position: fixed;
@@ -126,7 +128,7 @@ input {
     padding-top: 20px;
   }
 }
-////////// TERMINA EL MENÚ BAJO MENÚ HAMBURGUESA//////////
+////////// TERMINA EL MENÚ BAJO MENÚ HAMBURGUESA.
 
 p span {
   display: block;
@@ -444,6 +446,7 @@ p span {
   margin-right: 0px;
 }
 
+////////// TABLET. IPAD 768px.
 @media screen and (min-width: 769px) {
   * {
     list-style: none; // Saco los números del menú.
@@ -591,4 +594,7 @@ p span {
     display: flex;
     margin: 0px 100px 0px 100px;
   }
+}
+
+@media screen and (min-width: 769px) {
 }
