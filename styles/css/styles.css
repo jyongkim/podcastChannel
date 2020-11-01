@@ -448,7 +448,9 @@ p span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%; }
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto; }
   .guestsImg {
     width: 422px; }
   .topics h2 {
