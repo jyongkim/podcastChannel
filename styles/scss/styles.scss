@@ -133,21 +133,16 @@ input {
  }
 
 .link {
-   height: 40px;
-   display: block;
-   color: white;
-   padding: 0 16px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  height: 40px;
+  display: block;
+  color: #FFFFFF;
+  padding: 0 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  padding: 0 10px 0 48px;
  }
-
-.link {
-   font-family: 'IBM Plex Mono', monospace;
-   font-size: 16px;
-   color: #060A24;
-   letter-spacing: 0;
-   line-height: 28px;
-   padding: 0 10px 0 48px;
-   text-decoration: none;
-}
 
 .link:hover{
    text-decoration: line-through;
@@ -261,6 +256,7 @@ input {
 }
 
 .aboutDescription h2 {
+  position: relative;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
   color: #060a24;
@@ -272,9 +268,10 @@ input {
 }
 
 .aboutDescription p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
   height: 254px;
   width: auto;
-  font-size: 14px;
   color: #060a24;
   letter-spacing: 0;
   line-height: 22px;
@@ -450,14 +447,9 @@ input {
 
   .header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
     position: fixed;
+    height: 80px;
     width: 100%;
-    top: 0;
-    background-color: white;
-    z-index: 999;
   }
 
   .headerMenu {
@@ -472,23 +464,8 @@ input {
   }
 
   .link {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 16px;
     color: #060a24;
-    letter-spacing: 0;
-    line-height: 28px;
-    padding: 0 10px 0 48px;
     text-decoration: none;
-  }
-
-  .link:hover {
-    text-decoration: line-through;
-    color: #00f3bb;
-  }
-
-  .link:active {
-    text-decoration: line-through;
-    color: gray;
   }
 
   .hello {
@@ -497,40 +474,24 @@ input {
   }
 
   .hello h1 {
-    font-family: "IBM Plex Sans", sans-serif;
     font-size: 64px;
-    color: #060a24;
-    letter-spacing: 0;
     font-weight: 400;
-    z-index: -9999;
   }
 
   .hello button {
     margin-top: 50px;
   }
 
-  .crossed {
-    text-decoration: line-through;
-  }
-
   .hello p {
-    font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
-    color: #060a24;
     letter-spacing: 0;
     line-height: 24px;
-    font-weight: 400;
   }
 
   .button {
-    background-color: #00f3bb;
     width: 226px;
     height: 56px;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 18px;
-    color: #060a24;
     letter-spacing: 0;
-    text-align: center;
     line-height: 24px;
     font-weight: 500;
     cursor: pointer;
@@ -542,21 +503,12 @@ input {
   }
 
   .episodesBackground {
-     height: 980px;
+     height: 700px; // ajustar según la resolución. 
      width: 100%;
 }
 
   .episodes h2 {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 48px;
-    letter-spacing: 0;
-    font-weight: 400;
     margin: 186px 200px 26px;
-    position: relative;
-  }
-
-  .containerIframes {
-    max-width: 1440px;
   }
 
   .containerIframes iframe {
@@ -567,8 +519,6 @@ input {
 
   .about {
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .aboutImg {
@@ -577,32 +527,20 @@ input {
     margin-right: 50px;
   }
 
-  .aboutDescription h2 {
-    font-family: "IBM Plex Sans", sans-serif;
+  .aboutDescription h2 {;
     font-size: 48px;
-    color: #060a24;
-    letter-spacing: 0;
-    font-weight: 400;
   }
 
   .aboutDescription p {
-    font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
-    color: #060a24;
-    letter-spacing: 0;
     line-height: 24px;
-    font-weight: 400;
     text-align: justify;
     width: 464px;
     height: 204px;
   }
 
   .guests h2 {
-    font-family: "IBM Plex Sans", sans-serif;
     font-size: 48px;
-    color: #060a24;
-    letter-spacing: 0;
-    font-weight: 400;
     margin: 36px 200px;
   }
 
@@ -618,7 +556,6 @@ input {
   }
 
   .topics h2 {
-    font-family: "IBM Plex Sans", sans-serif;
     font-size: 48px;
     margin: 56px 200px;
   }
