@@ -420,6 +420,9 @@ p span {
     width: 100%; }
   .episodes h2 {
     margin: 186px 200px 26px; }
+  .containerIframes {
+    max-width: 1440px;
+    margin: 0 auto; }
   .containerIframes iframe {
     margin-bottom: 72px;
     width: 500px;

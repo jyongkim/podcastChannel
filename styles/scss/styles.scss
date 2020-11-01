@@ -518,7 +518,16 @@ p span {
     margin: 186px 200px 26px;
   }
 
-  .containerIframes iframe {
+  .parentContainerIframes {
+  
+  } 
+
+  .containerIframes {
+  max-width: 1440px;
+  margin: 0 auto;
+  }
+
+    .containerIframes iframe {
     margin-bottom: 72px;
     width: 500px;
     height: 232px;
