@@ -101,6 +101,9 @@ input {
     width: 100%;
     padding-top: 20px; } }
 
+p span {
+  display: block; }
+
 #topics {
   padding-bottom: 10px; }
 
