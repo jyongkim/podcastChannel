@@ -4,6 +4,7 @@
   border: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  list-style: none; // Saco los números del menú.
 }
 
 body {
@@ -448,10 +449,6 @@ p span {
 
 ////////// TABLET. IPAD 768px.
 @media screen and (min-width: 769px) {
-  * {
-    list-style: none; // Saco los números del menú.
-  }
-
   .header {
     display: flex;
     position: fixed;
@@ -473,10 +470,6 @@ p span {
   .link {
     color: #060a24;
     text-decoration: none;
-  }
-
-  .hello {
-    width: 100%;
   }
 
   .hello h1 {
@@ -509,13 +502,9 @@ p span {
   }
 
   .episodesBackground {
-     height: 700px; // ajustar según la resolución. 
+     height: 950px; // ajustar según la resolución. 
      width: 100%;
 }
-
-  .episodes h2 {
-    margin: 186px 200px 26px;
-  }
 
   .containerIframes {
   max-width: 1440px;
@@ -603,4 +592,5 @@ p span {
 }
 
 @media screen and (min-width: 769px) {
+
 }

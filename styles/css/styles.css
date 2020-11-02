@@ -3,7 +3,8 @@
   padding: 0;
   border: none;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  list-style: none; }
 
 body {
   overflow-x: hidden; }
@@ -376,8 +377,6 @@ p span {
   margin-right: 0px; }
 
 @media screen and (min-width: 769px) {
-  * {
-    list-style: none; }
   .header {
     display: flex;
     position: fixed;
@@ -393,8 +392,6 @@ p span {
   .link {
     color: #060a24;
     text-decoration: none; }
-  .hello {
-    width: 100%; }
   .hello h1 {
     font-size: 64px;
     font-weight: 400; }
@@ -415,10 +412,8 @@ p span {
     background-image: linear-gradient(225deg, #0000a3 -40%, #00f3bb 100%);
     color: white; }
   .episodesBackground {
-    height: 700px;
+    height: 950px;
     width: 100%; }
-  .episodes h2 {
-    margin: 186px 200px 26px; }
   .containerIframes {
     max-width: 1440px;
     margin: 0 auto; }
