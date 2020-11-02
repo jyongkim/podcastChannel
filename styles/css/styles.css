@@ -13,7 +13,7 @@ body {
   color: #0000ec; }
 
 .header {
-  display: block;
+  display: flex;
   width: 100vw;
   padding-top: 10px;
   height: auto;
@@ -378,10 +378,8 @@ p span {
 
 @media screen and (min-width: 769px) {
   .header {
-    display: flex;
     position: fixed;
-    height: 80px;
-    width: 100%; }
+    height: 80px; }
   .headerMenu {
     display: flex;
     margin-right: 100px; }
@@ -395,6 +393,9 @@ p span {
   .hello h1 {
     font-size: 64px;
     font-weight: 400; }
+  .hello {
+    margin: 120px 200px;
+    width: 100%; }
   .hello button {
     margin-top: 50px; }
   .hello p {
