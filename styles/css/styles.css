@@ -413,7 +413,7 @@ p span {
     background-image: linear-gradient(225deg, #0000a3 -40%, #00f3bb 100%);
     color: white; }
   .episodesBackground {
-    height: 950px;
+    height: 1100px;
     width: 100%; }
   .episodes h2 {
     padding: 36px 200px; }
@@ -421,7 +421,8 @@ p span {
     padding: 40px 100px 80px; }
   .containerIframes {
     position: relative;
-    text-align: center; }
+    text-align: center;
+    max-width: 1440px; }
   .containerIframes iframe {
     margin-bottom: 72px;
     width: 500px;
