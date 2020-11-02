@@ -8,7 +8,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden; // Me ayuda con el responsive, pero no lo suficiente.
 }
 
 .color {
@@ -508,7 +508,7 @@ p span {
   }
 
   .episodesBackground {
-     height: 1100px; // ajustar según la resolución. 
+     height: 1100px; // Ajustar según la resolución; ¿se podrá ajustar automáticamente?
      width: 100%;
 }
 
@@ -533,7 +533,7 @@ p span {
   }
 
   .about {
-    display: flex;
+    display: flex; // Block en mobile.
   }
 
   .aboutImg {
@@ -560,7 +560,7 @@ p span {
   }
 
   .guestsImages {
-    display: flex;
+    display: flex; // Block en mobile.
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -586,7 +586,7 @@ p span {
   }
 
   .topicsContainer {
-    display: flex;
+    display: flex; // Block en mobile.
     margin-bottom: 200px;
   }
 
@@ -604,8 +604,4 @@ p span {
     display: flex;
     margin: 0px 100px 0px 100px;
   }
-}
-
-@media screen and (min-width: 769px) {
-
 }
