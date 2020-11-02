@@ -394,10 +394,10 @@ p span {
     font-size: 64px;
     font-weight: 400; }
   .hello {
-    margin: 120px 200px;
-    width: 100%; }
+    margin: 120px 200px; }
   .hello button {
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-right: 83%; }
   .hello p {
     font-size: 16px;
     letter-spacing: 0;
@@ -415,9 +415,13 @@ p span {
   .episodesBackground {
     height: 950px;
     width: 100%; }
+  .episodes h2 {
+    padding: 36px 200px; }
+  .parentContainerIframes {
+    padding: 40px 100px 80px; }
   .containerIframes {
-    max-width: 1440px;
-    margin: 0 auto; }
+    position: relative;
+    text-align: center; }
   .containerIframes iframe {
     margin-bottom: 72px;
     width: 500px;

@@ -475,14 +475,16 @@ p span {
     font-weight: 400;
   }
 
-  .hello { // Genera problemas en el responsive.
-    margin: 120px 200px;
-    width: 100%;
+  .hello {
+    // display: flex;
+    // flex-wrap: wrap;
+    margin: 120px 200px; // Genera problemas en el responsive.
  }
 
   .hello button {
     margin-top: 50px;
-
+    margin-right: 83%;
+    // justify-content: flex-start; no funciona; no hay espacio. 
   }
 
   .hello p {
@@ -510,9 +512,17 @@ p span {
      width: 100%;
 }
 
+  .episodes h2 {
+    padding: 36px 200px;
+  }
+
+  .parentContainerIframes {
+    padding: 40px 100px 80px;
+  }
+
   .containerIframes {
-  max-width: 1440px;
-  margin: 0 auto;
+    position: relative;
+    text-align: center;
   }
 
     .containerIframes iframe {
