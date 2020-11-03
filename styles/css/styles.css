@@ -14,7 +14,7 @@ body {
 
 .header {
   display: flex;
-  width: 100vw;
+  width: 100%;
   padding-top: 10px;
   height: auto;
   justify-content: space-between;
@@ -104,7 +104,10 @@ input {
     width: 100%;
     padding-top: 20px; } }
 
-p span {
+#helloDesktop {
+  display: none; }
+
+#break2 {
   display: block; }
 
 #topics {
@@ -149,13 +152,14 @@ p span {
 .hello h1 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
+  font-weight: 400;
   color: #060a24;
   letter-spacing: 0;
   line-height: 42px;
   margin: 39px 16px 16px 16px;
   text-align: start;
   z-index: -999;
-  width: 60vw; }
+  width: 100%; }
 
 .hello button {
   margin-top: 36px; }
@@ -393,6 +397,15 @@ p span {
   .hello h1 {
     font-size: 64px;
     font-weight: 400; }
+  #helloDesktop {
+    display: inherit; }
+  #helloMobile {
+    display: none; }
+  #break1 {
+    display: block; }
+  #break2 {
+    display: block;
+    margin-top: 10px; }
   .hello {
     margin: 120px 200px; }
   .hello button {
@@ -413,7 +426,7 @@ p span {
     background-image: linear-gradient(225deg, #0000a3 -40%, #00f3bb 100%);
     color: white; }
   .episodesBackground {
-    height: 1150px;
+    height: 950px;
     width: 100%; }
   .episodes h2 {
     padding: 36px 200px; }
@@ -422,9 +435,9 @@ p span {
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    text-align: center;
-    max-width: 1280px;
-    padding: 100px; }
+    align-content: space-between;
+    margin-left: 180px;
+    margin-right: 180px; }
   .containerIframes iframe {
     margin-bottom: 72px;
     width: 500px;

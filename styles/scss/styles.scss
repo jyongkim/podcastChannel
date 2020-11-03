@@ -17,7 +17,7 @@ body {
 
 .header {
   display: flex;
-  width: 100vw;
+  width: 100%;
   padding-top: 10px;
   height: auto;
   justify-content: space-between;
@@ -131,9 +131,13 @@ input {
 }
 ////////// TERMINA EL MENÚ BAJO MENÚ HAMBURGUESA.
 
-p span {
-  display: block;
+#helloDesktop { // El párrafo en mobile es distinto al de desktop.
+  display: none;
 }
+
+#break2 { // Salto de línea párrafo de "De dónde venimos"
+  display: block;
+  }
 
 #topics {
    padding-bottom: 10px;
@@ -183,13 +187,14 @@ p span {
 .hello h1 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
+  font-weight: 400;
   color: #060a24;
   letter-spacing: 0;
   line-height: 42px;
   margin: 39px 16px 16px 16px;
   text-align: start;
   z-index: -999;
-  width: 60vw;
+  width: 100%;
 }
 
 .hello button {
@@ -475,6 +480,23 @@ p span {
     font-weight: 400;
   }
 
+  #helloDesktop {
+    display: inherit;
+  }
+
+  #helloMobile {
+    display: none;
+  }
+
+  #break1 {
+    display: block;
+    }
+
+  #break2 {
+    display: block;
+    margin-top: 10px;
+    }
+
   .hello {
     // display: flex;
     // flex-wrap: wrap;
@@ -508,7 +530,7 @@ p span {
   }
 
   .episodesBackground {
-    height: 1150px;; // Ajustar según la resolución; ¿se podrá ajustar automáticamente?
+    height: 950px;; // Ajustar según la resolución; ¿se podrá ajustar automáticamente?
     width: 100%;
 }
 
@@ -521,9 +543,9 @@ p span {
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    text-align: center;
-    max-width: 1280px;
-    padding: 100px;
+    align-content: space-between;
+    margin-left: 180px;
+    margin-right: 180px;
   }
 
     .containerIframes iframe {
