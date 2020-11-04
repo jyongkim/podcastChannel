@@ -8,7 +8,7 @@
 }
 
 body {
-  overflow-x: hidden; // Me ayuda con el responsive, pero no lo suficiente.
+  overflow-x: hidden; // Me ayuda con el responsive.
 }
 
 .color {
@@ -213,6 +213,9 @@ input {
   font-weight: 400;
 }
 
+.containerEpisodesBackground {
+}
+
 .episodesBackground {
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   transform: skewY(-6deg);
@@ -222,14 +225,18 @@ input {
   position: absolute;
 }
 
+.episodes {
+  margin-top: 55px;
+}
+
 .episodes h2 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 48px;
   letter-spacing: 0;
   font-weight: 400;
   color: #ffffff;
-  margin: 64px 147px 21px 16px;
-  padding-top: 50px;
+  margin: 30px 90px 21px 16px;
+  padding-top: 0px;
   position: relative; // Pongo "Episodios" encima del background azul.
 }
 
