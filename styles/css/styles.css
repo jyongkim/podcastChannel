@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   border: none;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  list-style: none; }
+  list-style: none;
+  overflow-x: hidden; }
 
 body {
   overflow-x: hidden; }
@@ -378,6 +378,8 @@ input {
   margin-right: 0px; }
 
 @media screen and (min-width: 769px) {
+  * {
+    overflow-x: visible; }
   .header {
     position: fixed;
     height: 80px; }
