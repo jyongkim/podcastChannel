@@ -145,7 +145,8 @@ input {
 .hello {
   height: 279px;
   margin: 0px;
-  text-align: center; }
+  text-align: center;
+  overflow-x: visible; }
 
 .hello h1 {
   font-family: "IBM Plex Sans", sans-serif;
@@ -156,7 +157,8 @@ input {
   line-height: 42px;
   margin: 39px 16px 16px 16px;
   text-align: start;
-  z-index: -999; }
+  z-index: -999;
+  overflow-x: visible; }
 
 .hello button {
   margin-top: 36px; }

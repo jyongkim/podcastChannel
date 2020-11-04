@@ -180,6 +180,7 @@ input {
   height: 279px;
   margin: 0px;
   text-align: center;
+  overflow-x: visible; // saca el scrolling.
 }
 
 .hello h1 {
@@ -192,6 +193,7 @@ input {
   margin: 39px 16px 16px 16px;
   text-align: start;
   z-index: -999;
+  overflow-x: visible; // saca el scrolling.
 }
 
 .hello button {
@@ -459,7 +461,7 @@ input {
 ////////// TABLET. IPAD 768px.
 @media screen and (min-width: 769px) {
   * {
-    overflow-x: visible;
+    overflow-x: visible; // saca el scrolling.
   }
   .header {
     position: fixed;
@@ -507,7 +509,7 @@ input {
   .hello {
     // display: flex;
     // flex-wrap: wrap;
-    margin: 120px 200px; // Genera problemas en el responsive.
+    margin: 120px 200px; // Generaba algunos problemas en el responsive.
  }
 
   .hello button {
