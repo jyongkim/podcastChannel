@@ -199,7 +199,8 @@ input {
 
 .containerIframes {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  max-width: 1280px; }
 
 .containerIframes iframe {
   height: 258px;
@@ -486,4 +487,6 @@ input {
     height: 80px; }
   .containerSocial {
     display: flex;
-    margin: 0px 100px 0px 100px; } }
+    margin: 0px 100px 0px 100px; }
+  .containerSocial p {
+    overflow-x: visible; } }
