@@ -395,8 +395,10 @@ input {
 
 .news button {
   position: relative;
-  width: 354px;
-  height: 56px;
+  width: 288px;
+  height: 48px;
+  // width: 354px;
+  // height: 56px;
   margin-top: 36px;
 }
 
@@ -506,6 +508,7 @@ input {
 
   .hello button {
     margin-top: 50px;
+    margin-left: 20px;
     margin-right: 83%;
     // justify-content: flex-start; no funciona; no hay espacio. 
   }
