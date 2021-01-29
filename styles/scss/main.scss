@@ -1,0 +1,329 @@
+/* Variables */
+$img: "../../images";
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500%7CIBM+Plex+Sans:400,600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    h1, h2{
+        font: normal 3rem IBM Plex Sans, sans-serif;
+        letter-spacing: 0;
+    }
+    .title{
+        padding: .5rem 1rem;
+        text-align: left;
+        @media screen and (min-width:768px){
+            margin: 0;
+            padding: 0;
+            margin-left: 200px;
+            max-width: 1440px;
+        }
+    }
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+    & > a:first-child {
+        background: url(../../images/logo.svg) no-repeat center;
+        background-size: contain;
+        width: 2rem;
+        height: 2rem;
+        margin: .5rem;
+    }
+    ul {
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: blue;
+    }
+    a {
+        display: block;
+        padding: .5rem;
+        text-decoration: none;
+        color: white;
+    }
+    label {
+        position: relative;
+        height: 3rem;
+        width: 3rem;
+        overflow: hidden;
+        margin: .5rem;
+        span {
+            display: block;
+            height: .2rem;
+            width: 2rem;
+            background-color: black;
+            margin: .5rem;
+            transition: all 1s ease;
+            position: absolute;
+            &:nth-child(1) {
+                top: .5rem;
+            }
+            &:nth-child(2) {
+                top: 1rem;
+            }
+            &:nth-child(3) {
+                top: 1.5rem;
+            }
+        }
+    }
+}
+
+#hamburger {
+    display: none;
+    &:checked + label span:nth-child(even) {
+        transform: rotate(45deg);
+    }
+    &:checked + label span:nth-child(odd) {
+        transform: rotate(315deg);
+    }
+    &:checked + label span{
+        position: absolute;
+        top: 1rem;
+    }
+    &:checked ~ .headerMenu {
+        height: auto;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.headerMenu {
+    height: 0;
+    position: relative;
+    top: -100vh;
+    transition: all 1s ease-out;
+    a {
+        padding: 1rem .5rem;
+        &:hover {
+            text-decoration: line-through;
+            color: #00F3BB;
+        }
+        &:active {
+            color: rgba(6,10,36,0.56);
+        }
+    }
+}
+
+header {
+    padding: 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    h1, p, button.button{
+        margin-left: 200px;
+    }
+    #helloDesktop {
+        display: none;
+    }
+}
+
+.containerIframes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap:.5rem;
+    justify-content: center;
+    align-content: flex-start;
+        @media screen and (min-width: 1360px) {
+            grid-template-columns: repeat(2, minmax(584px, 768px));
+            gap: 4rem;
+        }
+
+    iframe {
+        display:block;
+        border: none;
+        display: block;
+        width: 100%;
+        height: 232px;
+    }
+}
+
+#us{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .aboutImg{
+        width: 100%;
+        max-width: 457.6px;
+        position: relative;
+        z-index: 1;
+    }
+    .aboutDescription {
+        line-height: 1.5rem;
+    }
+}
+
+#interviews {
+    margin: auto;
+    max-width: 1440px;
+    .guestsImages{
+        display: block;
+        margin: 0;
+        grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+        
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+#topi {
+    margin: auto;
+    max-width: 1440px;
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .topic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 200px;
+        line-height: 1.5rem;
+        img{
+            max-width: 104px;
+            margin: 1rem 0;
+        }
+    }
+    h2 {
+        width: 100%;
+    }
+}
+
+.button {
+    background-color:#00F3BB;
+    max-width: 345px;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    border: none;
+    width: 100%;
+    font-size: 1.1rem;
+    outline: none;
+    transition: all .5s ease-in;
+
+    &:hover {
+        background-image: linear-gradient(225deg, #0000a3 -40%, #00f3bb 100%);
+        color: white;
+    }
+}
+
+#episodes, .news {
+    position: relative;
+    padding: 6rem 1rem;
+    color: white;
+    text-align: center;
+    perspective: 100px;
+    perspective-origin:-500% 100%;
+    @media screen and (min-width:768px) {
+        perspective-origin: -200% 100%;
+        margin-top: 3rem;
+    }
+}
+
+.backgrounds {
+    position: absolute;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#episodes {
+    margin-bottom: -5rem;
+    h2{
+        margin: auto;
+        padding-left: 200px;
+        max-width: 1440px;
+    }
+}
+
+#episodes .backgrounds {
+    transform: skewY(-6deg);
+}
+
+.news .backgrounds {
+    transform: 
+        rotateY(30deg);
+    @media screen and (min-width:768px){
+        transform: 
+            rotateY(60deg);
+    }
+}
+
+.containerSocial {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    a i {
+        color: black;
+    }
+}
+
+@media screen and (min-width:576px) {
+    #interviews {
+        .guestsImages {
+            display: grid;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    nav {
+        label {display: none;}
+        a {color: #060A24;}
+    }
+
+    .headerMenu {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+    }
+
+    header {
+        #helloMobile {
+            display: none;
+        }
+        #helloDesktop {
+            display: block;
+            max-width: 580px;
+        }
+        .button {
+            margin: 1rem 0;
+        }
+    }
+
+    #us{
+        flex-direction: row;
+        .aboutDescription {
+            max-width: 576px;
+        }
+    }
+}
