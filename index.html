@@ -4,39 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles/css/styles.css"/>
+    <link rel="stylesheet" href="styles/css/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500%7CIBM+Plex+Sans:400,600&display=swap" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/95707a6628.js" crossorigin="anonymous"></script> <!--https://www.w3schools.com/icons/fontawesome5_intro.asp-->
+    <script src="https://kit.fontawesome.com/95707a6628.js" crossorigin="anonymous"></script>
     <title>Podcast Channel</title>
   </head>
   <body>
-    <header class="header">
-      <figure class="headerLogo"> <img src="images/logo.svg" alt="Logo" /> </figure>
+    <nav class="header">
+      <a href="#" title="PodcastChannel"></a>
       <input id="hamburger" type="checkbox"/>
       <label for="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </label>
-      <nav id="menu">
-        <ol class="headerMenu">
+        <ul class="headerMenu">
           <li><a class="link" href="#episodes">EPISODIOS</a></li>
           <li><a class="link" href="#us">NOSOTROS</a></li>
           <li><a class="link" href="#interviews">ENTREVISTAS</a></li>
           <li><a class="link" href="#topi">TÓPICOS</a></li>
-        </ol>
-      </nav>
-    </header>
-    <section class="hello">
+        </ul>
+    </nav>
+    <header class="hello">
       <h1>Hello <span class="crossed">world</span> pale blue dot<span class="color">.</span></h1>
-        <p id="helloDesktop">El portal de podcasts que explora el mundo de la programación y <span id="break1">la tecnología. Nuevos episodios, todos los jueves cada 15 días.</span></p>
+        <p id="helloDesktop">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
         <p id="helloMobile">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
       <button class="button">CONOCÉ MÁS</button>
-    </section>
+    </header>
     <section class="episodes" id="episodes">
-        <div class="episodesBackground"></div>
-        <h2>Episodios</h2>
-          <div class="containerIframes">
+        <div class="backgrounds"></div>
+        <h2 class="title">Episodios</h2>
+          <div class="containerIframes"> 
             <iframe class="iframe" src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media"></iframe>
             <iframe class="iframe" src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allow="encrypted-media"></iframe>
             <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" allow="encrypted-media"></iframe>
@@ -47,50 +45,48 @@
       <figure> <img class="aboutImg" src="images/phone.png" alt="Phone" /></figure>
       <div class="aboutDescription">
         <h2>De dónde venimos.</h2>
-        <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <span id="break2">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</span></p>
+        <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
+        <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
       </div>
     </section>
     <section class="guests" id="interviews">
-      <h2>Invitadas/os estelares.</h2>
-      <div class="guestsImages">
-        <figure> <a href="https://es.wikipedia.org/wiki/Grace_Murray_Hopper" target="_blank"><img class="guestsImg" src="images/grace-hopper.png" alt="Grace Hopper"/> </a> </figure>
-        <figure> <a href="https://es.wikipedia.org/wiki/Katie_Bouman" target="_blank"><img class="guestsImg" src="images/Katie-Bouman.png" alt="Katie Bouman"/> </a> </figure>
-        <figure> <a href="https://es.wikipedia.org/wiki/Margaret_Hamilton_(cient%C3%ADfica)" target="_blank"> <img class="guestsImg" src="images/Margaret_Hamilton.png" alt="Margaret Hamilton"/> </a> </figure>
-        <figure> <a href="https://es.wikipedia.org/wiki/UNIVAC_I" target="_blank"> <img class="guestsImg" src="images/an-era-univac1103.png" alt="Univac"/> </a> </figure>
-        <figure> <a href="https://es.wikipedia.org/wiki/ENIAC" target="_blank"> <img class="guestsImg" src="images/Computer.png" alt="Eniac"/> </a> </figure>
-        <figure> <a href="https://en.wikipedia.org/wiki/Susan_Kare" target="_blank"> <img class="guestsImg" src="images/susan-kare.png" alt="Susan Kare"/> </a> </figure>
-      </div>
+      <h2 class="title">Invitadas/os estelares.</h2>
+      <figure class="guestsImages">
+        <a href="https://es.wikipedia.org/wiki/Grace_Murray_Hopper" target="_blank"><img class="guestsImg" src="images/grace-hopper.png" alt="Grace Hopper"/> </a>
+        <a href="https://es.wikipedia.org/wiki/Katie_Bouman" target="_blank"><img class="guestsImg" src="images/Katie-Bouman.png" alt="Katie Bouman"/> </a>
+        <a href="https://es.wikipedia.org/wiki/Margaret_Hamilton_(cient%C3%ADfica)" target="_blank"> <img class="guestsImg" src="images/Margaret_Hamilton.png" alt="Margaret Hamilton"/> </a>
+        <a href="https://es.wikipedia.org/wiki/UNIVAC_I" target="_blank"> <img class="guestsImg" src="images/an-era-univac1103.png" alt="Univac"/> </a>
+        <a href="https://es.wikipedia.org/wiki/ENIAC" target="_blank"> <img class="guestsImg" src="images/Computer.png" alt="Eniac"/> </a>
+        <a href="https://en.wikipedia.org/wiki/Susan_Kare" target="_blank"> <img class="guestsImg" src="images/susan-kare.png" alt="Susan Kare"/> </a>
+      </figure>
     </section>
     <section class="topics" id="topi">
-      <h2>Algunos de nuestros temas.</h2>
-      <div class="topicsContainer">
-        <div class="topic">
+      <h2 class="title">Algunos de nuestros temas.</h2>
+        <figure class="topic">
           <img src="images/icon1.svg" alt="Ícono de trabajo remoto" />
-          <p>Trabajo remoto.</p>
-        </div>
-        <div class="topic">
+          <figcaption>Trabajo remoto.</figcaption>
+        </figure>
+        <figure class="topic">
           <img src="images/icon2.svg" alt="Ícono de repensar la programación" />
-          <p>Repensando la programación.</p>
-        </div>
-        <div class="topic">
+          <figcaption>Repensando la programación.</figcaption>
+        </figure>
+        <figure class="topic">
           <img src="images/icon3.svg" alt="Ícono de bases de código" />
-          <p>Bases del código.</p>
-        </div>
-        <div class="topic">
+          <figcaption>Bases del código.</figcaption>
+        </figure>
+        <figure class="topic">
           <img src="images/icon4.svg" alt="Ícono de seguridad" />
-          <p>Seguridad informatica.</p>
-        </div>
-      </div>
+          <figcaption>Seguridad informatica.</figcaption>
+        </figure>
     </section>
     <section class="news">
-      <div class="newsBackground1"></div>
-      <div class="newsBackground"></div>
+      <div class="backgrounds"></div>
       <h2>¿Querés las últimas novedades?</h2>
       <button class="button">ESCUCHÁ LOS EPISODIOS</button>
     </section>
     <footer class="footer">
       <div class="containerSocial">
-        <p>© 2019- Hello blue pale dot.</p>
+        <p>© 2020 - Hello blue pale dot.</p>
         <div class="footerSocial">
           <a href="https://www.spotify.com/ar/" target="_blank"><i class="fab fa-spotify" id="spotify"> </i> </a>
           <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" id="instagram"> </i> </a>
