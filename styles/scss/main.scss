@@ -1,7 +1,7 @@
 /* Variables */
 $img: "../../images";
 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500%7CIBM+Plex+Sans:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+Condensed:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap');
 
 * {
     box-sizing: border-box;
@@ -12,30 +12,62 @@ body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    h1, h2{
+    p {
+        font-family: IBM Plex Mono;
+        font-size: .875rem;
+        line-height: 1.5rem;
+        @media screen and (min-width: 768px){
+            font-size: 1rem;
+        }
+    }
+    .crossed {
+        text-decoration: line-through;
+    }
+    .color {
+        font-family: Century Gothic;
+        @media screen and (min-width: 768px){
+            color: #0000EC;
+        }
+    }
+    .button {
+        font-family: IBM Plex Mono;
+        line-height: 1.5rem;
+    }
+    h1, h2 {
         font: normal 3rem IBM Plex Sans, sans-serif;
         letter-spacing: 0;
+        margin-bottom: 2rem;
     }
-    .title{
+    .title {
         padding: .5rem 1rem;
         text-align: left;
+        font-size: 2.25rem;
+        line-height: 2.6rem;
         @media screen and (min-width:768px){
-            margin: 0;
+            margin: 1rem 10%;
             padding: 0;
-            margin-left: 200px;
             max-width: 1440px;
         }
+        @media screen and (min-width:992px){
+            margin: 1rem auto;
+            margin-left: 200px;
+        }
+    }
+    & > div:first-child {
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 3;
     }
 }
 
 nav {
+    max-width: 1600px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 3;
     background-color: white;
     & > a:first-child {
         background: url(../../images/logo.svg) no-repeat center;
@@ -56,6 +88,7 @@ nav {
         padding: .5rem;
         text-decoration: none;
         color: white;
+        font-family: IBM Plex Mono;
     }
     label {
         position: relative;
@@ -99,7 +132,6 @@ nav {
     &:checked ~ .headerMenu {
         height: auto;
         top: 0;
-        z-index: -1;
     }
 }
 
@@ -121,14 +153,25 @@ nav {
 }
 
 header {
+    color: #060A24;
     padding: 1rem;
     max-width: 1440px;
-    margin: 0 auto;
-    h1, p, button.button{
-        margin-left: 200px;
-    }
+    margin: 0 auto 3rem;
     #helloDesktop {
         display: none;
+    }
+    @media screen and (min-width: 768px) {
+        h1, p, button.button{
+            margin: 0 10%;
+        }
+        button.button {
+            max-width: 228px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        h1, p, button.button{
+            margin-left: 200px;
+        }
     }
 }
 
@@ -138,8 +181,8 @@ header {
     gap:.5rem;
     justify-content: center;
     align-content: flex-start;
-        @media screen and (min-width: 1360px) {
-            grid-template-columns: repeat(2, minmax(584px, 768px));
+        @media screen and (min-width: 992px) {
+            grid-template-columns: repeat(2, minmax(380px, 584px));
             gap: 4rem;
         }
 
@@ -186,21 +229,29 @@ header {
 }
 
 #topi {
-    margin: auto;
+    margin: 1rem auto 3rem;
     max-width: 1440px;
     @media screen and (min-width:768px){
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
+        margin: 1rem auto 6rem;
     }
     .topic {
         display: flex;
+        margin: auto;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        max-width: 200px;
+        max-width: 320px;
         line-height: 1.5rem;
+        figcaption {
+            font-family: IBM Plex Sans;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #060A24;
+        }
         img{
             max-width: 104px;
             margin: 1rem 0;
@@ -216,10 +267,10 @@ header {
     max-width: 345px;
     display: block;
     margin: auto;
-    padding: 1rem;
+    padding: .75rem 1rem;
     border: none;
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     outline: none;
     transition: all .5s ease-in;
 
@@ -235,7 +286,7 @@ header {
     color: white;
     text-align: center;
     perspective: 100px;
-    perspective-origin:-500% 100%;
+    perspective-origin: -5000px 100%;
     @media screen and (min-width:768px) {
         perspective-origin: -200% 100%;
         margin-top: 3rem;
@@ -255,9 +306,14 @@ header {
 #episodes {
     margin-bottom: -5rem;
     h2{
-        margin: auto;
-        padding-left: 200px;
+        margin: 1rem auto 2rem;
         max-width: 1440px;
+        @media screen and (min-width: 768px) {
+            padding-left: 10%;
+        }
+        @media screen and (min-width: 992px) {
+            padding-left: 200px;
+        }
     }
 }
 
@@ -275,13 +331,20 @@ header {
 }
 
 .containerSocial {
+    padding: 0 1rem;
+    max-width: 1600px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    a i {
+    font-family: IBM Plex Mono;
+    a {
+        display: inline-block;
+        margin: .5rem;
         color: black;
+        text-decoration: none;
     }
 }
 
@@ -313,10 +376,11 @@ header {
         }
         #helloDesktop {
             display: block;
-            max-width: 580px;
+            max-width: 768px;
         }
-        .button {
-            margin: 1rem 0;
+        button.button {
+            margin-top: 1rem;
+            margin-bottom: 3rem;
         }
     }
 
